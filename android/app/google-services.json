@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "145742341880",
+    "project_id": "rbim-5a55d",
+    "storage_bucket": "rbim-5a55d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145742341880:android:89fefb27f2dabaf609bd0d",
+        "android_client_info": {
+          "package_name": "com.rbim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145742341880-8nmichqjp9imqq1o7qgvcge3f46ng97s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEkd6wCW5S-44su5CkT_4DZQYWL_Ms4Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145742341880-8nmichqjp9imqq1o7qgvcge3f46ng97s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RBIM</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">LIeOC7UyDDfSeako6qH5diHpxHzG0Tc7Ksbpn</string>
+</resources>
