@@ -294,7 +294,8 @@ dependencies {
         implementation "androidx.work:work-multiprocess:$work_version"
 
     //noinspection GradleDynamicVersion
-    implementation "com.facebook.react:react-native:+"  // From node_modules
+    //implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation("com.facebook.react:react-android")
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
     

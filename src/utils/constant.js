@@ -1,7 +1,7 @@
 export const _URL = {
-  DEVELOPMENT: "https://apirbim.underdev.in/api/",
-  UAT: "https://apiuatrbim.underdev.in/api/",
-  PRODUCTION: "https://apirbim.underdev.in/api/",
+  DEVELOPMENT: "https://122.49.208.51:443/api/",
+  UAT: "https://122.49.208.51:443/api/",
+  PRODUCTION: "https://122.49.208.51:443/api/",
 };
 
 export const HTTPS_METHOD = {

@@ -103,12 +103,18 @@ function fetchApiCall(url, params) {
       console.log(error);
     });
 }
+
 const getFcmToken = async () => {
-  const token = await messaging().getToken();
-  if (token) {
-    return token;
-  }
+    try {
+        fcmToken = await messaging().getToken();
+        console.log("from firebase messaging: " + fcmToken);
+        return fcmToken;
+    } catch (error) {
+      console.log("caught:" + JSON.stringify(error), null, 2);
+      return "321654987";
+    }
 };
+
 function isIphoneX() {
   const dimension = Dimensions.get("window");
   return (
