@@ -1,7 +1,7 @@
 export const _URL = {
-  DEVELOPMENT: "https://122.49.208.51:443/api/",
-  UAT: "https://122.49.208.51:443/api/",
-  PRODUCTION: "https://122.49.208.51:443/api/",
+  DEVELOPMENT: "http://122.49.208.51/api/",
+  UAT: "http://122.49.208.51/api/",
+  PRODUCTION: "http://122.49.208.51/api/",
 };
 
 export const HTTPS_METHOD = {
