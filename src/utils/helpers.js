@@ -111,6 +111,7 @@ const getFcmToken = async () => {
         return fcmToken;
     } catch (error) {
       console.log("caught:" + JSON.stringify(error), null, 2);
+      // return guid
       return "321654987";
     }
 };
