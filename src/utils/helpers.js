@@ -13,6 +13,9 @@ import messaging from "@react-native-firebase/messaging"; // For integrating Fir
 import Moment from "moment"; // For formatting date and time
 import AsyncStorage from "@react-native-async-storage/async-storage"; // Local storage
 import DeviceInfo from "react-native-device-info"; // To get device information
+
+import { uuid } from 'uuidv4';
+
 const { height, width } = Dimensions.get("window");
 var result;
 
@@ -112,7 +115,8 @@ const getFcmToken = async () => {
     } catch (error) {
       console.log("caught:" + JSON.stringify(error), null, 2);
       // return guid
-      return "321654987";
+      //return "321654987";
+      return uuid();
     }
 };
 
