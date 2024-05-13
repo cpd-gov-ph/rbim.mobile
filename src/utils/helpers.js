@@ -14,7 +14,7 @@ import Moment from "moment"; // For formatting date and time
 import AsyncStorage from "@react-native-async-storage/async-storage"; // Local storage
 import DeviceInfo from "react-native-device-info"; // To get device information
 
-import { uuid } from 'uuidv4';
+import { uuid } from 'uuid';
 
 const { height, width } = Dimensions.get("window");
 var result;
@@ -107,16 +107,48 @@ function fetchApiCall(url, params) {
     });
 }
 
-const getFcmToken = async () => {
+/**
+* https://stackoverflow.com/questions/54662999/react-native-how-to-store-object-in-asyncstorage
+*/
+const ACCESS_TOKEN = "adba8ba2-9bfe-4ed6-9c8c-6eef1396cdd1";
+
+function saveTheToken(token) {
+    AsyncStorage.setItem(ACCESS_TOKEN, token, (err)=> {
+        if(err){
+            console.log("an error");
+            throw err;
+        }
+        console.log("success");
+    }).catch((err)=> {
+        console.log("error is: " + err);
+    });
+}
+
+const getTheToken = async() => {
     try {
-        fcmToken = await messaging().getToken();
-        console.log("from firebase messaging: " + fcmToken);
-        return fcmToken;
+        const value = await AsyncStorage.getItem(ACCESS_TOKEN);
+        return value;
     } catch (error) {
-      console.log("caught:" + JSON.stringify(error), null, 2);
-      // return guid
-      //return "321654987";
-      return uuid();
+        console.log("error in token");
+        // Error retrieving data
+        return null;
+    }
+}
+
+const getFcmToken = async () => {
+    fcmToken = await getTheToken();
+    if (fcmToken === null) {
+        try {
+            fcmToken = await messaging().getToken();
+            console.log("from firebase messaging: " + fcmToken);
+        } catch (error) {
+          console.log("caught:" + JSON.stringify(error), null, 2);
+          fcmToken = uuid();
+        }
+      saveTheToken(fcmToken);
+      return fcmToken;
+    } else {
+        return fcmToken;
     }
 };
 
@@ -191,7 +223,8 @@ const parseMessage = (str) => {
 };
 
 const getuuid = () => {
-  return Math.floor(Math.random() * (0 - 9999)) + 9999;
+  //return Math.floor(Math.random() * (0 - 9999)) + 9999;
+  return uuid();
 };
 const isEmpty = (obj) => {
   for (var key in obj) {
