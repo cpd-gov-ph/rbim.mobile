@@ -8,6 +8,7 @@ import Colors from "../themes/colors"; // Themes
 import { getUserInformation } from "../utils/localStorage"; // Local storage data
 import { store } from "../../App"; // Redux store
 import { userLogout } from "../store/actions/authActions"; // Auth actions
+
 const axiosApiInstance = axios.create({
   baseURL: constant.BASE_URL,
   timeout: constant.TIME_OUT,
@@ -19,9 +20,7 @@ const APIRequest = async (options, content_type = 0) => {
       if (response.data.status === 1) {
         return response.data; // Return Success Response
       } else {
-        setTimeout(() => {
-          snackBar(response.data.message, 1500, Colors.red_color);
-        }, 500);
+        console.log("me error:", JSON.stringify(response));
       }
     } catch (err) {
       //  console.log("error---<", err);
