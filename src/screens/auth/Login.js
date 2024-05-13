@@ -43,7 +43,7 @@ const Login = ({ navigation }) => {
       setEmailErrorText(auth_error_text.no_email);
     } else if (!validateEmail(email)) {
       setEmailError(true);
-      setEmailErrorText(auth_error_text.invaild_email);
+      setEmailErrorText(auth_error_text.invalid_email);
     } else if (password === "") {
       setPasswordError(true);
       setPasswordErrorText(auth_error_text.no_password);
@@ -62,7 +62,7 @@ const Login = ({ navigation }) => {
   const updatePasswordVisibility = () => {
     setSecureTextEntry(!secureTextEntry);
   };
-  console.log("login_loader", login_loader);
+
   return (
     <SafeAreaView style={styles().container}>
       {login_loader ? <Loader loading={login_loader} /> : null}

@@ -30,7 +30,7 @@ const ForgotPassword = () => {
       setEmailErrorText(auth_error_text.no_email);
     } else if (!validateEmail(email)) {
       setEmailError(true);
-      setEmailErrorText(auth_error_text.invaild_email);
+      setEmailErrorText(auth_error_text.invalid_email);
     } else {
       let _input = {
         email: email,

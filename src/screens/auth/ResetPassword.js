@@ -45,7 +45,7 @@ const ResetPassword = ({ route }) => {
       setPasswordErrorText(auth_error_text.not_match);
       setConfirmPasswordErrorText(auth_error_text.not_match);
     } else if (!validatePassword(password)) {
-      snackBar(auth_error_text.invaild_password);
+      snackBar(auth_error_text.invalid_password);
     } else {
       let payload_data = route.params.payload_data;
       let _input = {

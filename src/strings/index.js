@@ -64,9 +64,9 @@ const drawer_text = {
 };
 
 const auth_error_text = {
-  invaild_email: "You have entered an invalid e-mail address",
+  invalid_email: "You have entered an invalid e-mail address",
   no_email: "Please enter your e-mail to proceed",
-  invaild_password:
+  invalid_password:
     "Please choose a stronger password. Try a mix of letters, numbers, and symbols.",
   no_password: "Please enter your password to proceed",
   not_match: "Password do not match",
