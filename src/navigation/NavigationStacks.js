@@ -66,7 +66,7 @@ const tab_icon = [
 
 export function AuthStack(data) {
   return (
-    <Stack.Navigator
+    <Stack.Navigator useLegacyImplementation={false}
       initialRouteName={
         data.extraData.show_intro === 0 ? navigation_screens.GetStarted : navigation_screens.Login
       }
@@ -130,7 +130,7 @@ export function AuthStack(data) {
 }
 const SurveyNumberStack = () => {};
 const HomeTabStack = () => (
-  <Tab.Navigator
+  <Tab.Navigator useLegacyImplementation={false}
     tabBar={(props) => <CustomTabBar tab_icon={tab_icon} {...props} />}
     initialRouteName={"HomeTab"}
     backBehavior={"order"}
@@ -170,7 +170,7 @@ const HomeTabStack = () => (
 
 const MainScreens = () => {
   return (
-    <MainStack.Navigator>
+    <MainStack.Navigator useLegacyImplementation={false}>
       <MainStack.Screen
         name={navigation_screens.MainScreens}
         component={HomeTabStack}
@@ -359,7 +359,7 @@ const MainScreens = () => {
 
 const DrawerScreen = ({ navigation }) => {
   return (
-    <Drawer.Navigator
+    <Drawer.Navigator useLegacyImplementation={false}
       drawerContent={(props) => <CustomDrawer {...props} />}
       initialRouteName={navigation_screens.DrawerScreen}
       screenOptions={{

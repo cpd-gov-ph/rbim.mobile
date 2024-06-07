@@ -208,7 +208,7 @@ class NavigationConfig extends React.PureComponent {
           onStateChange={this.onStateChange}
         >
           {navigation_target === 0 ? (
-            <RootStack.Navigator>
+            <RootStack.Navigator useLegacyImplementation={false}>
               <RootStack.Group>
                 <RootStack.Screen options={{ headerShown: false }} name="Auth">
                   {(props) => (
@@ -221,7 +221,7 @@ class NavigationConfig extends React.PureComponent {
               </RootStack.Group>
             </RootStack.Navigator>
           ) : (
-            <RootStack.Navigator>
+            <RootStack.Navigator useLegacyImplementation={false}>
               <RootStack.Group>
                 <RootStack.Screen options={{ headerShown: false }} name={navigation_screens.home}>
                   {(props) => <DrawerScreen {...props} />}
