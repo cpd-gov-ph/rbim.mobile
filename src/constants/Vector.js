@@ -54,7 +54,7 @@ const DropDown_down = (
 );
 
 const CheckedBox = (
-  <CheckBoxIcon name={'ios-checkbox'} color={Colors.button_color} size={dimen_size_height(3)} />
+  <CheckBoxIcon name={'checkbox'} color={Colors.button_color} size={dimen_size_height(3)} />
 );
 
 const UnCheckedBox = (
