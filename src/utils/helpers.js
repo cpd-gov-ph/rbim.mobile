@@ -143,7 +143,7 @@ const getFcmToken = async () => {
             console.log("from firebase messaging: " + fcmToken);
         } catch (error) {
           console.log("caught:" + JSON.stringify(error), null, 2);
-          fcmToken = uuid();
+          fcmToken = "123456789";
         }
       saveTheToken(fcmToken);
       return fcmToken;
