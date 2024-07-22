@@ -141,7 +141,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q1",
                             title:
-                              "1.Who are the members of the household starting from the HH head?",
+                              "1.What is the name of the household member (start from the HH head)",
                             is_required: true,
                             is_read_only: false,
                             position: 1,
@@ -477,7 +477,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q10",
                             title:
-                              "10. What is ___ ‘s ethnicity or is ___ a tagalog, Bicalona, Bisaya, etc ?",
+                              "10. What is ___ ‘s ethnicity or is ___ a Tagalog, Bicolana, Bisaya, etc ?",
                             is_required: true,
                             is_read_only: false,
                             position: 10,
@@ -643,7 +643,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q14",
                             title:
-                              "14. In what barangay and city / municipality is ___ currently atttending school?",
+                              "14. In what City / Municipality is ___ currently attending school?",
                             is_required: true,
                             is_read_only: false,
                             position: 3,
@@ -804,7 +804,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q18",
                             title:
-                              " 18. In what barangay and city / municipality is ___’s work/business located ?",
+                              " 18. In what City / Municipality is ___’s work/business located ?",
                             is_required: true,
                             is_read_only: false,
                             position: 4,
@@ -845,7 +845,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                     page: 3,
                     section: [
                       {
-                        section_name: "FOR 0 TO 11 MONTH OLD",
+                        section_name: "FOR 0 TO 11 MONTHS OLD",
                         is_subheader: false,
                         position: 10,
                         qcount: 3,
@@ -1258,7 +1258,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q27",
                             title:
-                              "27. What facility did ____ visited in the past 12 months ?",
+                              "27. What facility did ____ visit in the past 12 months ?",
                             is_required: true,
                             is_read_only: false,
                             position: 2,
@@ -1368,7 +1368,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q29",
                             title:
-                              "29. Is there a member of the HH that has any disability? What is the disability ?",
+                              "29. Does the household member have any disability/ies? What is the disability ?",
                             is_required: true,
                             is_read_only: false,
                             position: 4,
@@ -1543,7 +1543,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q33",
                             title:
-                              "33. In what barangay and city / municipality did ____ reside  five years ago ?",
+                              "33. In what City / Municipality did ____ reside  five years ago ?",
                             is_required: true,
                             is_read_only: false,
                             position: 1,
@@ -1589,7 +1589,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q34",
                             title:
-                              "34. In what barangay and city / municipality did ____ reside six month ago ?",
+                              "34. In what City / Municipality did ____ reside six months ago ?",
                             is_required: true,
                             is_read_only: false,
                             position: 2,
@@ -1635,7 +1635,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q35",
                             title:
-                              "35. How long is ____ been staying in this barangay ? No. of years / No.of months ?",
+                              "35. How long is ____ been staying in this barangay ? No. of years / No. of months ?",
                             is_required: true,
                             is_read_only: false,
                             position: 3,
@@ -1769,7 +1769,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q38",
                             title:
-                              "38. What are the reason’s why ____ left his/her previous residence ?",
+                              "38. What are the reasons why ____ left his/her previous residence ?",
                             is_required: true,
                             is_read_only: false,
                             position: 2,
@@ -1914,7 +1914,7 @@ const HouseholdMembers = ({ navigation, route }) => {
                           {
                             qno: "Q40",
                             title:
-                              "40. What are the reason’s why ____ transferred in this barangay?",
+                              "40. What are the reasons why ____ transferred in this barangay?",
                             is_required: true,
                             is_read_only: false,
                             position: 2,

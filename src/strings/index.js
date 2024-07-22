@@ -140,7 +140,7 @@ const form_footer = {
 
 const home_text = {
   assignedTasks: "Assigned Tasks",
-  noOfTasks: "No.of.Tasks",
+  noOfTasks: "No. of Tasks",
   task: "Task",
 };
 
@@ -169,7 +169,7 @@ const data_type = {
   other_datepicker: "other_datepicker",
 };
 const age_validation = {
-  BELOW_ONE_AGE: "FOR 0 TO 11 MONTH OLD",
+  BELOW_ONE_AGE: "FOR 0 TO 11 MONTHS OLD",
   WOMEN_AGE: "FOR WOMEN 10 TO 54 YEARS",
   ABOVE_FIVE: "FOR 5 YRS & ABOVE",
   FIVIFTY_OLD_ABOVE_AGE: "FOR 15 YEARS OLD AND ABOVE",
